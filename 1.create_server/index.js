@@ -1,5 +1,5 @@
- // content of index.js
-// parsing http requests.
+// content of index.js
+// Create a server.
 
 const http = require('http');
 
