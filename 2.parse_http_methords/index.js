@@ -27,7 +27,6 @@ const server = http.createServer((req, res) => {
     }
     console.log(req.url);
     
-    
 });
 
 server.listen(port, hostname, () => {
