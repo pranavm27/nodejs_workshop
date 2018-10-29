@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  h1= 'Home'
+  p Welcome to #{title} 
+  
+  
+  form(action='/showFilledDetails', method='get')
+    .row
+      .input-field.col.s6
+        input#first_name.validate( type='text', name='firstName')
+        label(for='first_name') First Name
+      .input-field.col.s6
+        input#last_name.validate(type='text', name='lastName')
+        label(for='last_name') Last Name
+    .row
+      .input-field.col.s6
+        input#email.validate(type='email', name='email')
+        label(for='email') Email
+      .input-field.col.s6
+        input#email.validate(type='number', name='age')
+        label(for='number') Age
+    .row  
+      button.btn(type='submit') Go
+  
+  
+  
+    //  p ' http://fakerestapi.azurewebsites.net/api/Books https://gist.githubusercontent.com/mariodev12/a923f2b651a005ca3ca7f851141efcbc/raw/39b06a32e4a58fc1fe63c7478a97edccd21138f1/superheroes.json' 
+  

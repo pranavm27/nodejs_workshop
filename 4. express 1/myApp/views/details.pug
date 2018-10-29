@@ -1,0 +1,12 @@
+extends layout
+
+block content
+      h1  #{title} 
+      .row
+      .col.s12.m6
+        .card
+          .card-content
+            span.card-title Details
+            p Name :   #{data.firstName} #{data.lastName}
+            p age : #{data.age}
+            p age : #{data.email}

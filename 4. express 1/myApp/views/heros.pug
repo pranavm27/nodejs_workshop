@@ -1,0 +1,14 @@
+extends layout
+
+block content 
+
+  each val in data
+    .row
+        .col-6
+            .card
+                .card-content
+                    .card-title
+                        h4 #{val.superhero}
+                    p Real Name : #{val.alter_ego}
+                    p publisher : #{val.publisher}
+        
