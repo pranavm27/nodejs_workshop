@@ -1,6 +1,6 @@
 # nodejs_workshop
 
 
-# feebback
+# feedback
 
 https://goo.gl/forms/fsOaXtf65muR8RBh1
