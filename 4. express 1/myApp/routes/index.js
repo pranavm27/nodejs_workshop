@@ -9,6 +9,11 @@ router.get('/', function(req, res, next) {
     //https://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b6907d289e10d714a6e88b30761fae22
 });
 
+router.get('/showFilledDetails', function(req, res, next){
+  res.render('filled_details', { firstName: req.query.firstName,
+  lastName: req.query.lastName, email: req.query.email, age: req.query.age });
+})
+
 /* GET search key*/
 router.get('/save', function(req, res, next) {
     console.log('query : ' + req.query)
